@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  android:background="@android:color/white"
+  android:id="@+id/activity_movies"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="@dimen/activity_horizontal_margin"
+  tools:context="com.tmdb.movies.Activities.MoviesActivity">
+
+  <TextView
+    android:id="@+id/txt_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    android:text="@string/info_name"/>
+
+  <ListView
+    android:id="@+id/list_movies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:divider="@android:color/darker_gray"
+    android:dividerHeight="1dp"
+    android:clipChildren="true"
+    android:visibility="visible"/>
+
+</FrameLayout>
